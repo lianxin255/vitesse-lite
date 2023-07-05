@@ -3,7 +3,7 @@
  * @Author: lianxin wsl1933467270@gmail.com
  * @Date: 2023-06-30 17:13:50
  * @LastEditors: lianxin wsl1933467270@gmail.com
- * @LastEditTime: 2023-06-30 20:51:32
+ * @LastEditTime: 2023-07-05 09:31:58
  * Copyright (c) 2023 by ${git_name} email: ${git_email}, All Rights Reserved.
  * @Descripttion:
 -->
@@ -29,7 +29,7 @@ const { url } = defineProps<Props>()
 
 
 
-let componentType = ref('')
+let componentType = ref(VueOfficeExcel)
 
 const selectedComponent = computed(() => {
   console.log(url)

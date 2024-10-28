@@ -3,18 +3,10 @@
  * @Author: lianxin wsl1933467270@gmail.com
  * @Date: 2023-06-30 11:57:24
  * @LastEditors: lianxin wsl1933467270@gmail.com
- * @LastEditTime: 2023-06-30 11:57:31
+ * @LastEditTime: 2023-07-11 06:55:37
  * Copyright (c) 2023 by ${git_name} email: ${git_email}, All Rights Reserved.
- * @Descripttion: 
+ * @Descripttion:
 -->
-<template>
-  <div class="pagination-container">
-    <el-pagination v-model:current-page="currentPage" v-model:page-size="pageSize" :background="background"
-      :layout="layout" :page-sizes="pageSizes" :total="total" v-bind="$attrs" @current-change="handleCurrentChange"
-      @size-change="handleSizeChange" />
-  </div>
-</template>
-
 <script>
 export default defineComponent({
   name: 'Pagination',
@@ -84,3 +76,13 @@ export default defineComponent({
   },
 })
 </script>
+
+<template>
+  <div class="pagination-container">
+    <el-pagination
+      v-model:current-page="currentPage" v-model:page-size="pageSize" :background="background"
+      :layout="layout" :page-sizes="pageSizes" :total="total" v-bind="$attrs" @current-change="handleCurrentChange"
+      @size-change="handleSizeChange"
+    />
+  </div>
+</template>

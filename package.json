@@ -1,4 +1,5 @@
 {
+  "version": "0.0.3",
   "private": true,
   "packageManager": "pnpm@8.6.0",
   "scripts": {
@@ -64,6 +65,5 @@
       "@antfu",
       "@unocss"
     ]
-  },
-  "version": "0.0.2"
+  }
 }
